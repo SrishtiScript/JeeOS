@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>JeeOS</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ===== Sidebar ===== -->
+
+    <aside class="sidebar">
+
+        <h1 class="logo">JEEOS</h1>
+
+        <nav>
+
+    <ul>
+
+        <li id="nav-dashboard">
+            🏠 Dashboard
+        </li>
+
+        <li id="nav-notes">
+            📚 Chapter Notes
+        </li>
+
+        <li id="nav-completed">
+            ✅ Completed Tasks
+        </li>
+
+        <li id="nav-calendar">
+            📅 Calendar
+        </li>
+
+        <li id="nav-statistics">
+            📊 Statistics
+        </li>
+
+    </ul>
+
+</nav>
+
+    </aside>
+
+    <!-- ===== Main Content ===== -->
+
+    <main>
+
+    <!-- ========================================
+         DASHBOARD PAGE
+         ======================================== -->
+
+    <div id="dashboard-page">
+
+        <!-- Greeting -->
+
+        <header class="greeting">
+
+            <h1 id="greeting-title"></h1>
+
+            <p>Your Personal JEE Operating System</p>
+
+        </header>
+
+
+        <!-- Dashboard -->
+
+        <section class="dashboard">
+
+            <div class="tasks">
+
+                <h2>Today's Tasks:</h2>
+
+                <div id="todays-tasks-list"></div>
+
+                <button id="clear-plan-btn">
+                    Clear
+                </button>
+
+            </div>
+
+
+            <div class="wins">
+
+                <h2>Today's Wins! 🎉</h2>
+
+                <div id="wins-list"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Subjects -->
+
+        <section class="subjects" id="subjects-page">
+
+            <div class="subjects-header">
+
+                <h2>My Subjects:</h2>
+
+                <button id="add-subject-btn">+</button>
+
+            </div>
+
+            <div id="subjects-container"></div>
+
+        </section>
+
+    </div>
+
+
+
+    <!-- ========================================
+         CHAPTER NOTES PAGE
+         ======================================== -->
+
+    <section class="full-page" id="notes-page">
+
+        <div class="page-header">
+
+            <h2>📚 Chapter Notes</h2>
+
+            <p>Your short notes for every chapter.</p>
+
+        </div>
+
+        <div id="notes-container"></div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         COMPLETED TASKS PAGE
+         ======================================== -->
+
+    <section class="full-page" id="completed-page">
+
+        <div class="page-header">
+
+            <h2>✅ Completed Tasks</h2>
+
+            <p>
+                Everything you've completed across your syllabus.
+            </p>
+
+        </div>
+
+        <div id="completed-container"></div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         CALENDAR PAGE
+         ======================================== -->
+
+    <section class="full-page" id="calendar-page">
+
+        <div class="page-header">
+
+            <h2>📅 Calendar</h2>
+
+            <p>
+                Plan your JEE journey.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         STATISTICS PAGE
+         ======================================== -->
+
+    <section class="full-page" id="statistics-page">
+
+        <div class="page-header">
+
+            <h2>📊 Statistics</h2>
+
+            <p>
+                Track your progress.
+            </p>
+
+        </div>
+
+    </section>
+
+
+</main>
+<script src="data/chapters.js"></script>
+<script src="script.js"></script>
+   
+
+</body>
+
+
+</html>
